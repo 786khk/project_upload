@@ -1,0 +1,580 @@
+@charset "UTF-8";
+
+
+button{color:#dedede;box-shadow:#dedede;}
+
+.container {
+    width: 100%;
+    max-width: none !important;
+    margin-top:30px;
+}
+
+.regi_center {
+    border: 1px solid #e6e7e8;
+    background: #fff;
+    margin: 0;
+    padding: 0;
+}
+
+/* 레시피 타이틀 */
+.regi_title {
+    background: #f8f8f8;
+    border-bottom: 1px solid #e6e7e8;
+    padding: 14px 18px;
+    font-size: 20px;
+    font-weight: bold;
+    position: relative;
+    font-family: 'Noto Sans KR', sans-serif;
+}
+
+/* 정보박스 */
+.regi_title .tit_right {
+    float: right;
+    padding: 0;
+    margin: -4px 0 0 0;
+}
+
+.regi_title .tit_right a {
+    margin-left: 10px;
+}
+
+img {
+    vertical-align: middle;
+}
+
+
+/* 박스 */
+.cont_box {
+    padding: 26px 30px;
+    border-bottom: 10px solid #f1f1f2;
+    margin: 0 -1px;
+}
+
+.pad_l_60 {
+    padding-left: 60px !important;
+}
+
+/* 요리 대표 사진 */
+.cont_pic2 {
+    /* width: 250px; */
+    width: 20%;
+    float: right;
+    margin-right: 60px;
+}
+
+.cont_pic2 img {
+    border: 1px solid #e1e1e1;
+    vertical-align: middle;
+}
+
+/* 1 */
+.cont_box input {
+    width:60%;
+    background: #f5f5f5;
+    border: 1px solid #e1e1e1;
+    font-size: 16px;
+    padding-left: 15px;
+    height: 50px;
+    vertical-align: middle;
+    margin-top: -1px;
+    
+}
+
+.cont_line {
+    /* width: 800px; */
+    width: 80%;
+    padding: 8px 0 0 0;
+}
+
+.cont_box p {
+    font-size: 20px;
+    padding: 0 0 0 2px;
+    margin: 0 0 22px 0;
+    line-height: 50px;
+    display: inline-block;
+}
+
+.cont_box .cont_tit4 {
+    width: /*15%;*/13.2%;
+    display: inline-block;
+    font-size: 20px;
+    font-weight: normal;
+    vertical-align: top;
+    text-align: left;
+}
+
+
+.cont_line input {
+    display: inline-block;
+    width:75%
+}
+
+/* 2 */
+.pad_b_25 {
+    padding-bottom: 25px !important;
+}
+
+.pad_b_25 textarea{width:75%;height:100px;resize:none;}
+
+.step_cont {
+    display: inline-block;
+    vertical-align: middle;
+    background: #f5f5f5;
+    border: 1px solid #e1e1e1;
+    font-size: 16px;
+    line-height: 25px;
+}
+
+/* 3 */
+.cont_line .thumb_m {
+    display: inline-block;
+    margin-left: 10px;
+}
+
+.cont_line .thumb_m img{vertical-align: middle;}
+
+
+/* 4 */
+
+/* select {
+    -webkit-writing-mode: horizontal-tb !important;
+    text-rendering: auto;
+    color: -internal-light-dark(black, white);
+    letter-spacing: normal;
+    word-spacing: normal;
+    text-transform: none;
+    text-indent: 0px;
+    text-shadow: none;
+    display: inline-block;
+    text-align: start;
+    appearance: menulist;
+    box-sizing: border-box;
+    align-items: center;
+    white-space: pre;
+    -webkit-rtl-ordering: logical;
+    background-color: -internal-light-dark(rgb(255, 255, 255), rgb(59, 59, 59));
+    cursor: default;
+    margin: 0em;
+    font: 400 13.3333px Arial;
+    border-radius: 0px;
+    border-width: 1px;
+    border-style: solid;
+    border-color: -internal-light-dark(rgb(118, 118, 118), rgb(195, 195, 195));
+    border-image: initial;
+} */
+
+.cont_box select {
+    background: #f5f5f5;
+    border: 1px solid #e1e1e1;
+    font-size: 16px;
+    padding: 8px 2px;
+    margin: 0 2px 0 0;
+    border-radius: 4px;
+    width:/*25%;*/37%;
+    display: inline-block;
+}
+
+.pad_l_30{padding:0 5px 0 10px}
+
+option {
+    font-weight: normal;
+    display: block;
+    white-space: pre;
+    min-height: 1.2em;
+    padding: 0px 2px 1px;
+}
+
+.cont_box .guide {
+    font-size: 14px;
+    display: inline-block;
+    line-height: 1.8;
+    margin-top: 6px;
+    color: #999;
+    background: url(//recipe1.ezmember.co.kr/img/icon_tip.png) left 2px no-repeat;
+    padding: 0 0 0 20px;
+    vertical-align: top;
+}
+
+
+
+/* 재료정보 */
+.mag_b_15 {
+    margin-bottom: 15px !important;
+}
+
+.mag_b_25 {
+    margin-bottom: 25px !important;
+}
+
+.cont_box ul, .cont_box li {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+.cont_box li {
+    margin-bottom: 8px;
+    display: list-item;
+    text-align: -webkit-match-parent;
+}
+
+/*제목*/
+.mag_r_15 {
+    margin-right: 15px !important;
+}
+
+.cont_box .cont_tit6 {
+    width: 230px;
+    display: inline-block;
+    font-size: 20px;
+    text-align: center;
+    vertical-align: top;
+    margin-left: -16px;
+}
+
+.cont_box .cont_tit6.st2 {
+    width: /*250px*/25%;
+}
+
+/* 아이콘 */
+.cont_box .btn-lineup {
+    background: url(//recipe1.ezmember.co.kr/img/btn_lineup.gif) center no-repeat;
+    display: inline-block;
+    width: 30px;
+    height: 30px;
+    vertical-align: middle;
+}
+
+/* 박스 */
+.cont_box li input {
+    display: inline-block;
+    margin: 0 3px;
+    vertical-align: middle;
+    width:350px;
+}
+
+.cont_box .cont_tit6 input {
+    background: #fffdd7;
+    display: inline-block;
+}
+
+/* 버튼 */
+.cont_tit6 .cont_tit_btn {
+    display: block;
+    margin: 10px 0 0 34px;
+    text-align: center;
+    line-height: 1;
+}
+
+.btn-default {
+    color: #333;
+    background-color: #fff;
+    border: 1px solid #ccc;
+}
+
+.btn-group-sm>.btn, .btn-sm {
+    padding: 5px 10px;
+    font-size: 12px;
+    line-height: 1.5;
+    border-radius: 3px;
+    vertical-align: middle;
+}
+
+.cont_tit6 .cont_tit_btn .btn-sm {
+    margin: 0 2px;
+}
+
+.glyphicon {
+    position: relative;
+    top: 1px;
+    display: inline-block;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 1;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}
+
+/* 재료 추가 */
+.cont_box ul {
+    display: inline-block;
+}
+
+/* 버튼 */
+.btn_add {
+    text-align: center;
+}
+
+.btn {
+    display: inline-block;
+    padding: 6px 20px;
+    margin: 0 2px;
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 1.42857143;
+    text-align: center;
+    white-space: nowrap;
+    vertical-align: middle;
+    -ms-touch-action: manipulation;
+    touch-action: manipulation;
+    cursor: pointer;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+    background-image: none;
+    border: 1px solid transparent;
+    border-radius: 3px;
+}
+
+.btn_add .btn {
+    border: 1px solid #dedede;
+    background: none;
+    margin: 10px 0 0 0;
+    padding: 5px 10px;
+    text-align:center;
+    font-size: 16px;
+    color: #444;
+    
+}
+
+.btn_add .btn span {
+    color: #ff9000;
+    font-size: 16px;
+    margin-right: 4px;
+}
+
+/* 재료 양념 추가*/
+.cont_box .noti {
+    color: #f43434;
+    font-size: 13ppx;
+    text-align: center;
+    border-top: 1px solid #e4e4e4!important;
+    padding-top: 15px;
+}
+
+.cont_box .noti_btn {
+    margin: 15px 0 6px 0;
+}
+
+.btn-group-lg>.btn, .btn-lg {
+    padding: 10px 30px;
+    font-size: 18px;
+    line-height: 1.3333333;
+    border-radius: 3px;
+    margin: 0 4px;
+}
+
+/* 요리순서 */
+.cont_box .cont_tit3 {
+    font-size: 20px;
+    font-weight: normal;
+    margin: 0;
+    width: 100%;
+}
+
+b, strong {
+    font-weight: 500;
+}
+
+.step {
+    display: inline-block;
+    margin: 6px 0;
+    width:90%;
+}
+
+#divStepText_ {border:1px solid red;}
+
+.cont_box .cont_tit2_1 {
+    width: 120px;
+    display: inline-block;
+    font-size: 30px;
+    font-weight: normal;
+    vertical-align: top;
+    color: #ff9000;
+    margin-left: /*70*/40px;
+}
+
+.cont_box p {
+       font-size: 20px;
+       padding: 0 0 0 2px;
+       margin: 0 0 22px 0;
+       line-height: 50px;
+       display: inline-block;
+}
+.step_cont {
+    display: inline-block;
+    vertical-align: middle;
+    background: #f5f5f5;
+    border: 1px solid #e1e1e1;
+    font-size: 16px;
+    line-height: 25px;
+}
+.step img {
+    border: 1px solid #e1e1e1;
+    display: inline-block;
+    vertical-align: middle;
+}
+
+.step_btn {
+    display: inline-block;
+    vertical-align: middle;
+}
+
+.step_btn a {
+    width: 30px;
+    height: 30px;
+    background: #eee;
+    color: #999;
+    display: block;
+    font-size: 13px;
+    text-align: center;
+    margin: 1px;
+    padding-top: 5px;
+}
+
+.step_btn a span {
+    padding-top: 2px;
+}
+
+
+
+
+.btn-group-xs>.btn, .btn-xs {
+    padding: 4px 7px 5px;
+    font-size: 12px;
+    line-height: 1;
+    border-radius: 3px;
+}
+
+/* 재료 삭제 */
+.btn-del {
+       background: url(//recipe1.ezmember.co.kr/img/btn_del2.gif) center no-repeat;
+       display: inline-block;
+       width: 30px;
+       height: 30px;
+       vertical-align: middle;
+}
+
+/* 퀵 바 아이콘 */
+.glyphicon-chevron-up:before {
+    content: "\e113";
+}
+
+.glyphicon-chevron-down:before {
+    content: "\e114";
+}
+
+.glyphicon-plus:before {
+    content: "\2b";
+}
+
+.glyphicon-remove:before {
+    content: "\e014";
+}
+
+.step_btn a:hover, .step_btn a:active, .step_btn a.active{
+    background-color: #ff9000;
+    color: #fff;
+}
+
+
+
+/* 요리완성사진 */
+.complete_pic {
+    position: relative;
+    width: 140px;
+    height: 140px;
+    display: inline-block;
+    margin: 0 4px 8px;
+    vertical-align: top;
+}
+
+.complete_pic img {
+    border: 1px solid #e1e1e1;
+   vertical-align: middle;
+}
+
+
+/* 태그 */
+
+ul.tagit {
+    width: 620px;
+    vertical-align: middle;
+    border:1px solid red;
+}
+
+/*
+ul.tagit li {
+    display: block;
+    float: left;
+    margin: 2px 5px 2px 0;
+}
+
+*/
+.tagit li.tagit-new {
+    padding: 0 4px 0 0!important;
+}
+
+ul.tagit li.tagit-new {
+    padding: .25em 4px .25em 0;
+}
+
+ul.tagit input[type="text"] {
+    width: 100%;
+    height: 30px;
+}
+
+
+/* 완료 버튼 */
+.regi_btm {
+    border: 1px solid #e6e7e8;
+    background: #fff;
+    text-align: center;
+    padding: 35px 0 40px 0;
+    border-top: none;
+}
+
+.btn-primary {
+    color: #fff;
+    background-color: #f0ad4e;
+    border: 1px solid #d88e24;
+}
+
+.btn-primary:hover{
+   background-color: #ff9000;
+   border: 1px solid #d88e24;
+}
+
+.btn-warning {
+    color: #fff;
+    background-color: #78CB24;
+    border: 1px solid #5AB300;
+}
+
+.btn-warning:hover{
+   background-color: #4c9900;
+   border: 1px solid #336600;
+   color:#fff;
+}
+
+.btn-default {
+    color: #333;
+    background-color: #fff;
+    border: 1px solid #ccc;
+}
+
+.regi_btm .btn-lg {
+    padding: 12px 50px;
+}
+
+/*
+@media screen and (max-width: 1024px){
+   #footer address, #footer ul {
+       display: none;
+   }
+}
+*/
+
+
+
