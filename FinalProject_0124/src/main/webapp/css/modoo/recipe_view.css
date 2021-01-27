@@ -1,0 +1,1000 @@
+@charset "UTF-8";
+
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+KR&display=swap');
+
+body{font-family: 'Noto Sans KR', sans-serif;}
+
+div{display: block;}
+
+
+.sub_bg {
+   position: relative;
+}
+
+.container {
+    width: 100%;
+    max-width: none !important;
+    margin:50px auto;
+    
+}
+.container:before {
+    display: table;
+    content: " ";
+}
+
+#contents_area {
+    width: 90%;
+    margin:0 auto;
+    padding: 0 0 20px 0;
+}
+
+
+/* 상단 대표 이미지 */
+.view2_pic {
+    margin: 0 auto;
+    padding: 60px 0;
+    position: relative;
+    text-align: center;
+    background: #fff;
+    max-width: /*600px*/ 70%;
+    
+}
+.centeredcrop {
+    position: relative;
+    width: 100%;
+    overflow: hidden;
+    height: 500px;
+}
+.centeredcrop img {
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    width: 100%;
+    height: auto;
+    vertical-align:middle;
+    -webkit-transform: translate(-50%,-50%);
+    -ms-transform: translate(-50%,-50%);
+    transform: translate(-50%,-50%);
+}
+
+
+.view_cate.st2 {
+    position: absolute;
+    right: 20px;
+    bottom: 60px;
+    padding: 0 12px 7px 0;
+    text-align: right;
+    line-height: 20px;
+    vertical-align: bottom;
+}
+.view_cate_num {
+    background: #000;
+    border-radius: 15px;
+    opacity: 0.6;
+    filter: alpha(opacity=60);
+    margin-bottom: 10px;
+    display: inline-block;
+    padding: 3px 10px 5px 16px;
+    margin-right: 0;
+}
+.view_cate_num span.hit {
+    font-size: 14px;
+    font-family: Myriad Pro;
+    color: #fff;
+    background: url(//recipe1.ezmember.co.kr/img/mobile/icon_view.png?v1) left top no-repeat;
+    background-size: 20px auto;
+    padding: 2px 14px 2px 25px;
+}
+
+.user_info2 {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    text-align: center;
+    width: 100%;
+    height: 130px;
+}
+
+.user_info2_pic img {
+    width: 110px;
+    height: 110px;
+    border-radius: 50%;
+   
+}
+
+.user_info2_name {
+    color: #333;
+    font-size: 15px;
+    display: inline-block;
+    line-height: 1;
+    position: relative;
+    margin-top: 100px;
+}
+
+.user_info2_name .btn {
+    border: 1px solid #ff9000;
+    font-size: 14px;
+    color: #ff9000;
+    width: 66px;
+    padding: 5px 0;
+    position: absolute;
+    right: -76px;
+    top: -7px;
+}
+
+
+/* 상단 요약 내용 */ 
+.view2_summary {
+    width: /*640px*/100%;
+    margin: 40px auto 0;
+    padding-bottom: 40px;
+}
+.view2_summary h3 {
+    font-size: 34px;
+    letter-spacing: -0.05em;
+    line-height: 1.3;
+    text-align: center;
+    padding: 0 10px;
+}
+.view2_summary_in {
+    position: relative;
+    /*padding: 20px 0;*/
+    color: #aaa;
+    font-style: italic;
+    font-size: 16px;
+    line-height: 100%;
+    width: 50%;
+    margin: 30px auto;
+    text-align: center;
+}
+.view2_summary_in_m1 {
+    position: absolute;
+    left: 0;
+    top: 0;
+    display: block;
+}
+.view2_summary_in_m2 {
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    display: block;
+}
+
+.view2_summary_info {
+    padding:0 15px;
+    text-align: center;
+    margin-bottom:40px;
+}
+.view2_summary_info span {
+    display: inline-block;
+    width: 30%;
+    padding-top: 56px;
+    color: #bcb7b7;
+    font-size: 16px;
+}
+.view2_summary_info1 {
+    background: url(//recipe1.ezmember.co.kr/img/mobile/icon_man.png) center no-repeat;
+    background-size: 34px;
+}
+.view2_summary_info2 {
+    background: url(//recipe1.ezmember.co.kr/img/mobile/icon_time2.png) center no-repeat;
+    background-size: 34px;
+}
+.view2_summary_info3 {
+    background: url(//recipe1.ezmember.co.kr/img/mobile/icon_star.png) center no-repeat;
+    background-size: 34px;
+}
+
+
+.view2_summary .btn_list {
+    border-top: 1px solid #e3e3e3;
+    padding: 40px 0 0 0;
+    text-align: center;
+}
+.view2_summary .btn_list a {
+    font-size: 15px;
+    color: #666;
+    width: 30%;
+    display: inline-block;
+}
+.view2_summary .btn_list.st2 a img {
+    width: 70px;
+    height: 70px;
+    border-radius: 0;
+}
+.view2_summary .btn_list a span {
+    margin: 0;
+    display: block;
+    padding-top: 8px;
+}
+.view2_summary .btn_list.st2 a span b.st2 {
+    color: #ff9000;
+    padding-left: 5px;
+}
+.view2_summary .btn_list.st2 a span b.st3 {
+    color: #ff9000;
+    padding-left: 5px;
+}
+
+
+
+/* 레시피 인쇄 버튼 */
+.view2_btn {
+    background: #e6e6e6;
+    padding: 5px 20px;
+    font-size: 14px;
+    font-weight: bold;
+    line-height: 1;
+    position: relative;
+    border: 1px solid #d2d2d2;
+    overflow: hidden; 
+}
+.view2_btn_r {
+    float: right;
+}
+.view2_btn a {
+    margin: 0 5px;
+}
+.view2_btn a img{
+   vertical-align: middle;
+}
+
+
+/* 공백 */
+.blank_bottom {
+    background: #f1f1f2;
+    height: 10px;
+    border-top: 1px solid #e6e7e8;
+    border-bottom: 1px solid #e6e7e8;
+    clear: both;
+}
+
+
+/* 공통 */
+/* 타이틀 */
+.best_tit {
+    font-size: 20px;
+    color: #000;
+    padding: 0 35px 50px 35px;
+}
+.best_tit b {
+	color:#ff9000;
+    font-weight: 500;
+}
+.best_tit span {
+    color: #ccc;
+    font-size: 14px;
+    font-style: italic;
+    padding-left: 4px;
+}
+
+
+/* 계량법 안내, 원본보기*/
+.best_tit_rmn {
+    float: right;
+    /*margin: -3px 0 0 0;*/
+    margin:20px;
+}
+
+.best_tit_rmn .btn {
+    background: #fff;
+    border: 1px solid #e5e5e5;
+    border-radius: 0;
+    color: #888;
+    font-size: 15px;
+    height: 36px;
+    padding: 0 20px 1px;
+    float: left;
+    margin-right: 5px;
+}
+
+
+/* 재료 */
+.cont_ingre2 {
+    padding: 30px 0 0;
+    margin:30px auto;
+}
+.ready_ingre3 {
+    padding: 0 20px 18px 20px;
+    vertical-align: top;
+}
+.ready_ingre3 ul.case1 {
+    width: 100%;
+    display: inline-block;
+    vertical-align: top;
+    margin:auto;
+}
+.ready_ingre3_tt {
+    padding-bottom: 8px;
+    color: #333;
+    font-size: 16px;
+    padding-left: 30px;
+    display: block;
+}
+.ready_ingre3 li {
+    border-bottom: 1px solid #ececec;
+    padding: 10px 6px;
+    list-style: none;
+    margin: 0 30px;
+    font-size: 16px;
+}
+.ready_ingre3 ul.case1 li {
+    width: 41%;
+    display: inline-block;
+    vertical-align: top;
+}
+.ready_ingre3 li .ingre_unit {
+    float: right;
+    color: #999;
+}
+
+
+
+/* 공통 */
+.view_step {
+    padding: 35px 0 10px;
+}
+
+/* 조리순서 */
+/* 버튼 */
+.best_tit_rmn a {
+    display: inline-block;
+    margin: 0;
+    padding: 0;
+}
+.best_tit_rmn a img {
+    height: 36px;
+    vertical-align: top;
+}
+
+/* 조리순서 레시피 */
+.view_step_cont.step1 {
+    background: url(//recipe1.ezmember.co.kr/img/icon_step_1.gif) no-repeat 48px 6px;
+    background-size: 36px;
+}
+.view_step_cont.step2 {
+    background: url(//recipe1.ezmember.co.kr/img/icon_step_2.gif) no-repeat 48px 6px;
+    background-size: 36px;
+}
+.view_step_cont.step3 {
+    background: url(//recipe1.ezmember.co.kr/img/icon_step_3.gif) no-repeat 48px 6px;
+    background-size: 36px;
+}
+.view_step_cont.step4 {
+    background: url(//recipe1.ezmember.co.kr/img/icon_step_4.gif) no-repeat 48px 6px;
+    background-size: 36px;
+}
+.view_step_cont.step5 {
+    background: url(//recipe1.ezmember.co.kr/img/icon_step_5.gif) no-repeat 48px 6px;
+    background-size: 36px;
+}
+.view_step_cont.step6 {
+    background: url(//recipe1.ezmember.co.kr/img/icon_step_6.gif) no-repeat 48px 6px;
+    background-size: 36px;
+}
+.view_step_cont.step7 {
+    background: url(//recipe1.ezmember.co.kr/img/icon_step_7.gif) no-repeat 48px 6px;
+    background-size: 36px;
+}
+.view_step_cont.step8 {
+    background: url(//recipe1.ezmember.co.kr/img/icon_step_8.gif) no-repeat 48px 6px;
+    background-size: 36px;
+}
+.view_step_cont.step9 {
+    background: url(//recipe1.ezmember.co.kr/img/icon_step_9.gif) no-repeat 48px 6px;
+    background-size: 36px;
+}
+.view_step_cont.step10 {
+    background: url(//recipe1.ezmember.co.kr/img/icon_step_10.gif) no-repeat 48px 6px;
+    background-size: 36px;
+}
+.view_step_cont.step11 {
+    background: url(//recipe1.ezmember.co.kr/img/icon_step_11.gif) no-repeat 48px 6px;
+    background-size: 36px;
+}
+.view_step_cont.step12 {
+    background: url(//recipe1.ezmember.co.kr/img/icon_step_12.gif) no-repeat 48px 6px;
+    background-size: 36px;
+}
+.view_step_cont.step13 {
+    background: url(//recipe1.ezmember.co.kr/img/icon_step_13.gif) no-repeat 48px 6px;
+    background-size: 36px;
+}
+.view_step_cont.step14 {
+    background: url(//recipe1.ezmember.co.kr/img/icon_step_13.gif) no-repeat 48px 6px;
+    background-size: 36px;
+}
+.view_step_cont.step15 {
+    background: url(//recipe1.ezmember.co.kr/img/icon_step_13.gif) no-repeat 48px 6px;
+    background-size: 36px;
+}
+.view_step_cont.step16 {
+    background: url(//recipe1.ezmember.co.kr/img/icon_step_13.gif) no-repeat 48px 6px;
+    background-size: 36px;
+}
+.view_step_cont.step17 {
+    background: url(//recipe1.ezmember.co.kr/img/icon_step_13.gif) no-repeat 48px 6px;
+    background-size: 36px;
+}
+.view_step_cont.step18 {
+    background: url(//recipe1.ezmember.co.kr/img/icon_step_13.gif) no-repeat 48px 6px;
+    background-size: 36px;
+}
+.view_step_cont.step19 {
+    background: url(//recipe1.ezmember.co.kr/img/icon_step_13.gif) no-repeat 48px 6px;
+    background-size: 36px;
+}
+.view_step_cont.step20 {
+    background: url(//recipe1.ezmember.co.kr/img/icon_step_13.gif) no-repeat 48px 6px;
+    background-size: 36px;
+}
+.view_step_cont.step21 {
+    background: url(//recipe1.ezmember.co.kr/img/icon_step_13.gif) no-repeat 48px 6px;
+    background-size: 36px;
+}
+.view_step_cont.step22 {
+    background: url(//recipe1.ezmember.co.kr/img/icon_step_13.gif) no-repeat 48px 6px;
+    background-size: 36px;
+}
+.view_step_cont.step23 {
+    background: url(//recipe1.ezmember.co.kr/img/icon_step_13.gif) no-repeat 48px 6px;
+    background-size: 36px;
+}
+.view_step_cont.step24 {
+    background: url(//recipe1.ezmember.co.kr/img/icon_step_13.gif) no-repeat 48px 6px;
+    background-size: 36px;
+}
+.view_step_cont.step25 {
+    background: url(//recipe1.ezmember.co.kr/img/icon_step_13.gif) no-repeat 48px 6px;
+    background-size: 36px;
+}
+.view_step_cont.step26 {
+    background: url(//recipe1.ezmember.co.kr/img/icon_step_13.gif) no-repeat 48px 6px;
+    background-size: 36px;
+}
+.view_step_cont.step27 {
+    background: url(//recipe1.ezmember.co.kr/img/icon_step_13.gif) no-repeat 48px 6px;
+    background-size: 36px;
+}
+.view_step_cont.step28 {
+    background: url(//recipe1.ezmember.co.kr/img/icon_step_13.gif) no-repeat 48px 6px;
+    background-size: 36px;
+}
+.view_step_cont.step29 {
+    background: url(//recipe1.ezmember.co.kr/img/icon_step_13.gif) no-repeat 48px 6px;
+    background-size: 36px;
+}
+.view_step_cont.step30 {
+    background: url(//recipe1.ezmember.co.kr/img/icon_step_13.gif) no-repeat 48px 6px;
+    background-size: 36px;
+}
+
+.media-body, .media-left, .media-right {
+    display: table-cell;
+    vertical-align: top;
+}
+.view_step_cont .media-right {
+    width: 300px;
+    padding-left:30px;
+}
+.view_step .view_step_cont .media-right img {
+    max-width: 300px;
+}
+.view_step_cont .media-right img {
+    margin: 0;
+}
+
+.view_step_cont {
+    padding: 6px 0 60px 96px;
+    width: 90%;
+    font-size: 22px;
+    /*display: grid;*/
+    display:table;
+    margin:0 auto;
+}
+.view_step_cont img {
+    border-radius: 10px;
+    max-width: 100%;
+    height: auto;
+    margin: 20px 0 10px;
+}
+.media-body p{
+   font-size: 15px;
+   color:#666666;
+   margin-bottom:3px;
+}
+
+
+/* 요리완성 사진 */
+.view_step .carousel.slide {
+    border: 2px solid #ececec;
+    box-shadow: 6px 6px 0px #f0f0f0;
+    padding: 5px;
+}
+.carousel-inner {
+    position: relative;
+    width: 100%;
+    overflow: hidden;
+    text-align: center;
+}
+.view_step .carousel .carouItem img {
+    max-width: 100%;
+}
+.view_step .carousel-control.right, .view_step .carousel-control.left {
+    background: none;
+}
+.view_step .carousel-control .glyphicon {
+    color: #fff;
+    filter: alpha(opacity=70);
+    opacity: 0.7;
+    text-shadow: 0 0 4px #000;
+}
+.glyphicon-chevron-left:before {
+    content: "\e079";
+}
+.glyphicon-chevron-right:before {
+    content: "\e080";
+}
+/* 하단 버튼 */
+.carousel-indicators {
+    position: absolute;
+    bottom: 10px;
+    left: 50%;
+    z-index: 15;
+    width: 60%;
+    padding-left: 0;
+    margin-left: -30%;
+    text-align: center;
+    list-style: none;
+}
+.view_step .carousel-indicators li.active {
+    background: #ff9000;
+    border: none;
+}
+.view_step .carousel-indicators li {
+    border: 2px solid #ccc;
+    width: 14px;
+    height: 14px;
+    vertical-align: middle;
+    margin:3px;
+}
+.carousel-indicators li {
+    display: inline-block;
+    width: 10px;
+    height: 10px;
+    margin: 1px;
+    text-indent: -999px;
+    cursor: pointer;
+    background-color: #000 \9;
+    background-color: rgba(0, 0, 0, 0);
+    border: 1px solid #fff;
+    border-radius: 10px;
+    filter: alpha(opacity=80);
+    opacity: .8;
+}
+
+
+/* 팁 */
+.view_step_tip{    
+   padding-bottom: 40px;
+}
+.view_step_tip dd {
+    font-size: 20px;
+    padding: 20px 32px 0;
+}
+
+
+/* 작성일 */
+.view_notice {
+    background: #f9f9f9;
+    border: 1px dashed #ccc;
+    margin: 0 40px 32px;
+    padding: 12px 18px 11px 8px;
+    text-align: right;
+}
+.view_notice_date {
+    float: left;
+    margin: 0;
+    padding: 0;
+    line-height: 1;
+    padding: 7px 0 0 0;
+    color: #999;
+    font-size: 13px;
+}
+.view_notice_date b {
+    font-weight: normal;
+    border-right: 1px solid #dedede;
+    padding: 0 12px;
+}
+.view_notice_date b:last-child {
+    border: none;
+}
+.view_notice span {
+    display: inline-block;
+    background: url(//recipe1.ezmember.co.kr/img/icon_noti.png) left top no-repeat;
+    padding: 5px 0 6px 31px;
+    font-size: 13px;
+    color: #999;
+}
+
+
+/* 작성자 */
+.view_profile {
+    padding: 0 50px 6px;
+}
+.profile_pic {
+    display: table-cell;
+    vertical-align: top;
+    padding-right: 14px;
+}
+.profile_pic img {
+    border-radius: 50%;
+    width: 80px;
+    border: 1px solid #ddd;
+}
+.profile_cont {
+    display: table-cell;
+    padding: 5px 0;
+    vertical-align: middle;
+}
+.profile_cont .cont_name {
+    margin: 0 0 6px 0;
+    font-size: 17px;
+    color: #000;
+    font-weight: bold;
+}
+.profile_cont .cont_intro {
+    color: #777;
+    font-size: 15px;
+    line-height: 1.5;
+    margin: 0;
+}
+.profile_cont .btn-default {
+    font-size: 13px;
+    background: none;
+    border: 1px solid #51c351;
+    border-radius: 20px;
+    color: #51c351;
+    font-weight: bold;
+    padding: 3px 16px 4px;
+    margin: -3px 0 0 8px;
+}
+.profile_cont .btn-default span {
+    font-size: 12px;
+    font-weight: normal;
+    padding-right: 2px;
+}
+
+
+/* 요리후기 */
+.view_reply.st2 {
+    padding: 40px 50px 25px;
+}
+.btn-default {
+    color: #333;
+    background-color: #fff;
+    border: 1px solid #ccc;
+}
+.pull-right {
+    float: right;
+}
+.pull-right>.dropdown-menu {
+    right: 0;
+    left: auto;
+}
+.dropdown-menu>li>a {
+    display: block;
+    padding: 3px 20px;
+    clear: both;
+    font-weight: 400;
+    line-height: 1.42857143;
+    color: #333;
+    white-space: nowrap;
+}
+
+
+/* 공통 */
+.reply_tit {
+    font-size: 24px;
+    font-weight: bold;
+    padding-bottom: 15px;
+    border-bottom: 1px solid #e6e7e8;
+    margin-bottom: 10px;
+    overflow: hidden;
+}
+.reply_tit span {
+    color: #ff9000;
+}
+.media:first-child {
+    margin-top: 0;
+}
+.reply_list {
+	
+    border-bottom: 1px solid #e6e7e8;
+    padding-bottom: 20px;
+    padding-top: 5px;
+}
+.reply_list .media-body {
+	width:800px;
+	
+    line-height: 22px;
+}
+.reply_list .media-heading {
+    color: #999;
+    font-size: 14px;
+    position: relative;
+}
+.reply_list .media-heading b {
+    font-size: 17px;
+    margin-right: 10px;
+    font-weight: normal;
+}
+.info_name_m {
+    color: #44b6b5;
+}
+.info_name_f {
+    color: #ff9000;
+}
+
+
+/* 별점 */
+.reply_list .media-heading span {
+    color: #ddd;
+    margin: 0 5px;
+}
+
+.reply_list_cont {
+    float: left;
+    width: 100%;
+    padding: 0;
+    margin: 0;
+}
+
+.reply_list_img {
+    float: right;
+    margin: 5px 4px 0 0;
+    padding: 0;
+}
+
+.reply_list_star img {
+    width: 16px;
+    margin: 0 1px 0 0;
+    vertical-align: text-top;
+}
+.reply_list_img img {
+    width: 100px;
+    height: 100px;
+}
+
+
+.reply_list_re {
+    float: left;
+    border-top: 1px solid #e6e7e8;
+    padding-top: 18px;
+    position: relative;
+}
+.reply_list_icon {
+    position: absolute;
+    left: -36px;
+    top: 10px;
+}
+
+
+/* 댓글 */
+.view_reply {
+    padding: 10px 60px;    
+}
+
+.reply_write {
+    display: block;
+    height: 116px;
+    margin-top: 14px;
+}
+.reply_list .media-heading {
+    color: #999;
+    font-size: 14px;
+    position: relative;
+}
+.reply_list .media-heading a {
+    color: #999;
+}
+
+.reply_write .input-group {
+    width: /*730px*/88%;
+    float: right;
+}
+
+
+.input-group-btn {
+    position: relative;
+    font-size: 0;
+    white-space: nowrap;
+    width: 1%;
+    vertical-align: middle;
+}
+.input-group .form-control, .input-group-addon, .input-group-btn {
+    display: table-cell;
+}
+
+.input-group-btn:last-child>.btn, .input-group-btn:last-child>.btn-group {
+    margin-left: -1px;
+}
+
+.input-group {
+    position: relative;
+    display: table;
+    border-collapse: separate;
+}
+
+.complete_pic {
+    position: relative;
+    width: 140px;
+    height: 140px;
+    display: inline-block;
+    margin: 0 4px 8px;
+    vertical-align: top;
+}
+
+.complete_pic img {
+    border: 1px solid #e1e1e1;
+}
+
+
+/* 태그 */
+.view_tag {
+    background: url(//recipe1.ezmember.co.kr/img/mobile/icon_tag.png) left top no-repeat;
+    background-size: 50px;
+    padding: 0 0 20px 54px;
+    line-height: 1.5;
+    margin: 0 40px;
+}
+.view_tag a {
+    color: #ff9000;
+    margin: 0 4px 6px;
+    background: #f2f2f2;
+    padding: 1px 5px;
+    display: inline-block;
+}
+
+
+/* 추천 레시피 */
+.common_rcp_list_ul {
+    padding: 0;
+    margin: 0;
+    vertical-align: top;
+}
+.view_btn_more {
+    padding: 15px 0 0;
+}
+.common_rcp_list_li {
+    list-style: none;
+    padding: 0;
+    margin: 0 12px 35px 0;
+    display: inline-block;
+    vertical-align: top;
+}
+.common_rcp_thumb {
+    border-radius: 6px;
+    overflow: hidden;
+}
+.common_rcp_thumb img {
+    max-width: 100%;
+}
+.common_rcp_caption_tit.line2 {
+    overflow: hidden;
+    text-overflow: ellipsis;
+    display: -webkit-box;
+    -webkit-line-clamp: 2;
+    -webkit-box-orient: vertical;
+    word-wrap: break-word;
+    white-space: normal;
+    line-height: 1.5;
+}
+.common_rcp_caption_tit {
+    margin: 0;
+    padding: 9px 0 0;
+    color: #000;
+    text-align: left;
+}
+.common_rcp_caption_name {
+    padding: 6px 2px 0 0;
+    color: #666;
+    vertical-align: middle;
+}
+.common_rcp_caption_name_pic {
+    margin: 0;
+}
+.common_rcp_caption_name_pic img {
+    width: 28px;
+    height: 28px;
+    border-radius: 50%;
+    margin-right: 4px;
+}
+.common_rcp_caption_rv {
+    vertical-align: middle;
+    line-height: 1;
+    margin-top: -4px;
+}
+.common_rcp_caption_rv_star img {
+    width: 13px;
+    margin-right: 1px;
+}
+.view_btn_more a {
+    background: #ffffff;
+    background: -moz-linear-gradient(top, #ffffff 75%, #efefef 100%);
+    background: -moz-linear-gradient(top, #ffffff 75%, #efefef 100%);
+    background: -webkit-linear-gradient(top, #ffffff 75%,#efefef 100%);
+    background: linear-gradient(to bottom, #ffffff 75%,#efefef 100%);
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ffffff', endColorstr='#efefef',GradientType=0 );
+    display: block;
+    border: 1px solid #d5d5d5;
+    padding: 8px 0;
+    text-align: center;
+    font-size: 13px;
+    color: #8e8e8e;
+    width: 360px;
+    margin: 0 auto;
+    border-radius: 1px;
+}
+
+/* 최근 본 레시피 */
+.rcp_lately_list {
+    margin-top: 44px;
+}
+.rcp_lately_list h3 {
+    margin-left: 20px;
+}
+.rcp_lately_list .row {
+    margin: 22px 40px 0 40px;
+    position: relative;
+}
+.rcp_lately_list .list_btn_next {
+    position: absolute;
+    right: /*0*/46px;
+    top: 70px;
+    z-index: 100;
+}
+.rcp_lately_list .thumbnail {
+    width: 180px;
+    border-radius: 0;
+    padding: 0;
+    height: 255px;
+    border: 1px solid #ddd;
+    display: block;
+    margin-bottom:20px;
+    background-color: #fff;
+}
+.rcp_lately_list .thumbnail img{
+   max-width: 100%;
+   margin:0 auto;
+}
+
+/* 동영상 */
+.view_movie {
+    margin: 0 50px;
+    padding: 20px 0 40px 0;
+}
+.view_movie .movie_area {
+    width: 750px;
+    position: relative;
+    margin: 0 auto;
+}
+.iframe_wrap {
+    max-width: 100%;
+    margin: 0 auto;
+    position: relative;
+    display: block;
+    margin-top: 20px;
+    height: auto;
+    overflow: hidden;
+}
+
+.after_login {
+	padding: 20px 20px;
+	text-align: center;
+	color: fade;
+}
+
+/*위로가기 버튼*/
+.wrap_default{clear:borh;position:relative;}
+.wrap_default #on_top{display:block;position:fixed;right:20px;bottom:10px;z-index:10px;}

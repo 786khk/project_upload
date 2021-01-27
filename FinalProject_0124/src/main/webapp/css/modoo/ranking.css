@@ -1,0 +1,338 @@
+@charset "UTF-8";
+
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+KR&display=swap');
+
+
+
+body {
+    
+   font-family: 'Noto Sans KR', sans-serif;
+}
+
+table {
+    border-spacing: 0;
+    border-collapse: collapse;
+    background-color: transparent;
+}
+
+tbody {
+    display: table-row-group;
+    vertical-align: middle;
+    border-color: inherit;
+}
+
+tr {
+    display: table-row;
+    vertical-align: inherit;
+    border-color: inherit;
+}
+
+td {
+    display: table-cell;
+    vertical-align: inherit;
+}
+
+a{
+   text-decoration: none;
+}
+
+
+#contents_area_full {
+    padding: 0 0 20px 0;
+    margin:20px auto;
+    background: #fff; 
+}
+
+
+/*상단명*/
+
+.s_list_ea {
+    border-bottom: 1px solid #e6e7e8;
+    font-size: 15px;
+    padding: 6px 4px 12px;
+    /* margin: 14px 30px 0; */
+}
+
+.s_list_ea.tit {
+    font-size: 25px;
+    padding: 0.5em 0;
+    font-family: 'Noto Sans KR', sans-serif;
+    font-weight: normal;
+}
+
+.s_list_ea.tit span {
+    font-size: 16px;
+    color: #666;
+    font-weight: normal;
+}
+
+.rcp_m_list2 {
+    margin-top: 30px;
+    padding: 0 /* 0 22px*/;
+}
+
+
+
+
+/* 레시피, 검색어 */
+.nav-tabs3>li {
+    float: left;
+    margin-bottom: -1px;
+    background: #fff;
+    color: #666;
+}
+
+
+.nav-tabs3>li.active>a, .nav-tabs3>li.active>a:focus, .nav-tabs3>li.active>a:hover {
+    cursor: default;
+    background-color: #fff;
+    margin-bottom: -2px;
+    color: #000;
+    border: 1px solid #ccc;
+    border-bottom: 1px solid #fff;
+    font-weight: bold;
+    padding: 14px 38px;
+    position: relative;
+    display: block;
+}
+
+
+.nav1 {
+    padding-left: 0;
+    /*margin-bottom: 50px;*/
+    list-style: none;
+}
+
+.nav1:before{
+   display: table;
+    content: " ";
+    
+}
+
+
+   
+/* 일간 / 주간 / 월간 */
+.pull-right {
+      float: right!important;
+      border:1px solid red;
+}
+   
+.nav-tabs2 {
+    border: 1px solid #e0e0e0;
+    padding-bottom: 1px;
+    font-size: 15px;
+}
+
+
+.nav1>li {
+    position: relative;
+    display: block;
+    padding-left:0;
+}
+
+.nav1>li>a {
+    position: relative;
+    display: block;
+    padding: 10px 19px;
+}
+
+.nav-tabs2>li {
+    float: left;
+    margin-bottom: -1px;
+    background: #fff;
+    border-right: 1px solid #e0e0e0;
+    color: #999;
+    margin-left:0;
+}
+
+.nav-tabs2>li>a {
+    line-height: 1.42857143;
+    border: 1px solid transparent;
+    padding: 6px 22px;
+}
+
+.nav-tabs2>li.active>a, .nav-tabs2>li.active>a:focus, .nav-tabs2>li.active>a:hover {
+    cursor: default;
+    background-color: #ff9000;
+    border-bottom-color: transparent;
+    color: #fff;
+}
+
+.nav-tabs2>li:last-child {
+    border-right: none;
+}
+
+/* 순위 */
+.rcp_m_list2 .ranking_num {
+    background: #fff;
+    border: 1px solid #ff9000;
+    -webkit-box-shadow: 3px 3px 0 rgba(0, 0, 0, 0.08);
+    box-shadow: 3px 3px 0 rgba(0, 0, 0, 0.08);
+    min-width: 36px;
+    text-align: center;
+    border-radius: 4px;
+    line-height: 1;
+    padding: 8px 7px 10px;
+    letter-spacing: -0.03em;
+    vertical-align: unset;
+}
+
+.rcp_m_list2 .ranking_num.st1 {
+    position: absolute;
+    left: -4px;
+    top: -4px;
+    z-index: 100;
+}
+   
+   
+   
+   /* 앨범 게시판 */
+   .common_sp_list_ul {
+       margin: 0;
+       vertical-align: top;
+   }
+   
+   .common_sp_list_ul.ea4 li {
+       /*width: 282px;*/
+       width:22%;
+   }
+   
+   .common_sp_list_li {
+       list-style: none;
+       padding: 0;
+       /*margin: 0 12px 40px 0;*/
+       margin:15px;
+       display: inline-block;
+       vertical-align: top;
+       position: relative;
+    }
+    
+      /*이미지*/
+      .common_sp_thumb {
+       position: relative;
+       border-radius: 4px;
+       overflow: hidden;
+   }
+   
+   .common_sp_thumb img {
+         width: 100%;
+      vertical-align: middle;
+   }
+   .common_sp_caption_rv_name img {
+       width: 22px;
+       height: 22px;
+       border-radius: 50%;
+       margin: 0 4px -2px 0;
+       vertical-align: text-bottom;
+   }   
+   /* 동영상 */
+   .common_vod_label {
+       position: absolute;
+       right: 10px;
+       bottom: 10px;
+       z-index: 10;
+   }
+   .common_sp_thumb img {
+       width: 100%;
+   }
+   
+   /* 글 */
+   .common_sp_caption {
+         padding: 10px 2px;
+   }
+   
+   .common_sp_caption_tit {
+       margin: 0 0 6px 0;
+       color: #000;
+       text-align: left;
+       /*font-size: 15px;*/
+   }
+   
+   .common_sp_caption_tit.line2 {
+       overflow: hidden;
+       font-size:1.1em;
+       text-overflow: ellipsis;
+       display: -webkit-box;
+       -webkit-line-clamp: 2;
+       -webkit-box-orient: vertical;
+       word-wrap: break-word;
+       white-space: normal;
+       line-height: 1.5;
+      
+   }
+
+   
+   common_sp_caption_tit
+   /* 작성자 */
+   .common_sp_caption_rv_name {
+       color: #999;
+       text-overflow: ellipsis;
+       white-space: nowrap;
+       overflow: hidden;
+       font-size: 14px;
+       vertical-align: 0;
+       padding: 0 1px 7px 0;
+       font-weight: 300;
+   }
+   
+   /* 별점 */
+   .common_sp_caption_rv {
+       vertical-align: super;
+       line-height: 1;
+       margin: 0 0 9px 0;
+   }
+   
+   .common_sp_caption_rv_star {
+       vertical-align: 1px;
+   }
+   
+   .common_sp_caption_rv_star img {
+       width: 14px;
+       margin-right: 1px;
+       margin: 0;
+   }
+   
+     
+   /* 조회수 */
+   .common_sp_caption_buyer {
+       color: orange;
+       font-size: 15px;
+       margin-left: 2px;
+       font-weight: 350;
+   }
+      
+      
+/* 페이징 */
+.text-center {
+    text-align: center;
+    margin-top:50px;
+    border-top:1px solid #dedede;
+    padding-top:10px;
+    clear: both;
+}
+
+.pagination {
+    display: inline-block;
+    padding-left: 0;
+    margin: 30px 0;
+    border-radius: 0;
+}
+
+.pagination>li {
+    display: inline;
+}
+
+.pagination li a{
+   padding:9px 15px;
+   border:1px solid #e6e7e8   
+}
+
+.active a {
+    z-index: 2;
+    color: #fff;
+    cursor: default;
+    background-color: #FF9000;
+    border-color: #e6e7e8;
+}
+
+   
