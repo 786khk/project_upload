@@ -1,0 +1,529 @@
+@charset "UTF-8";
+
+#wrapper {
+	display: -moz-flex;
+	display: -webkit-flex;
+	display: -ms-flex;
+	display: flex;
+	-moz-flex-direction: row-reverse;
+	-webkit-flex-direction: row-reverse;
+	-ms-flex-direction: row-reverse;
+	flex-direction: row-reverse;
+	min-height: 100vh;
+	background-color: #ededed;
+}
+
+#main {
+	-moz-flex-grow: 1;
+	-webkit-flex-grow: 1;
+	-ms-flex-grow: 1;
+	flex-grow: 1;
+	-moz-flex-shrink: 1;
+	-webkit-flex-shrink: 1;
+	-ms-flex-shrink: 1;
+	flex-shrink: 1;
+	width: 100%;
+}
+
+
+div{
+	display: block;
+}
+a{
+	text-decoration: none;
+}
+p {
+    margin-top: 0;
+    margin-bottom: 1rem;
+}
+h1 {
+    display: block;
+    font-size: 2em;
+    margin-block-start: 0.67em;
+    margin-block-end: 0.67em;
+    margin-inline-start: 0px;
+    margin-inline-end: 0px;
+    font-weight: bold;
+}
+
+#header {
+    position: relative;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+    padding: /*106px*/70px 0 /*53*/30px;
+}
+
+.logo, .sp, .wrg {
+    background: url("../../images/logo/modoo_logo08.svg") no-repeat;
+}
+
+#header .r_logo {
+    display: block;
+    overflow: hidden;
+    width: /*161*//*300px;*/238px;
+    height: /*60*//*110px;*/86px;
+    margin: 0 auto;
+    background-position: -1px -1px;
+    font-size: 15px;
+    color: transparent;
+}
+
+
+
+
+
+/* 컨테이너 */
+#container, #header {
+    width: 768px;
+    margin: 0 auto; 
+}
+
+
+#container {
+	width:600px;
+    padding:35px 0;
+    min-height: 185px;
+    border:1px solid #ccc;
+    background-color: #fff;
+}
+
+
+#content {
+    width: 460px;
+    margin: 0 auto;
+    padding-bottom: 30px;
+}
+
+
+/* form */
+form {
+    display: block;
+    margin-top: 0em;
+}
+
+fieldset, img {
+    border: 0;
+}
+
+.login_form {
+    clear: both;
+}
+
+/* 아이디 */
+.id_area, .pw_area {
+    position: relative;
+}
+
+.input_row {
+    position: relative;
+    height: 29px;
+    margin-bottom: 8px;
+    padding: 7px 35px 10px 11px;
+    border: solid 1px #dadada;
+    background: #fff;
+}
+
+.input_box {
+    display: block;
+    overflow: hidden;
+}
+
+label {
+    cursor: default;
+}
+
+.lbl {
+    font-size: 15px;
+    line-height: 16px;
+    position: absolute;
+    z-index: 8;
+    top: 16px;
+    left: 15px;
+    color: #8e8e8e;
+}
+/*
+button, input, select, textarea {
+    border: 0;
+    border-radius: 0;
+    background: 0 0;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+    cursor: pointer;
+}
+*/
+.int {
+    font-size: 14px;
+    line-height: 16px;
+    position: relative;
+    z-index: 9;
+    width: 100%;
+    height: 16px;
+    padding: 8px 0 6px;
+    color: #000;
+    border: none;
+    background: #fff;
+    -webkit-appearance: none;
+}
+
+/*
+.login_check_box input:checked+.ico_keep_check::before {
+    border: 1px solid #f5f6f7\9;
+    background-position: 0 0;
+}
+
+.login_check_box input:focus~label {
+    outline: dotted thin;
+}
+*/
+
+
+/* 비밀번호 */
+.id_area, .pw_area {
+    position: relative;
+}
+
+
+/* 로그인 버튼 */
+.btn_global, .btn_login input, .btn_qronce_cancel {
+    display: block;
+    width: 100%;
+    height: 56px;
+    line-height: 55px;
+    margin: 12px 0 14px;
+    border-radius: 0;
+    border: solid 1px rgba(0,0,0,.1);
+    box-shadow: 0 2px 6px 0 rgba(61,80,81,.08);
+    background-color: #ff6600;
+    color: #fff;
+    font-size: 16px;
+    font-weight: 700;
+    letter-spacing: -.5px;
+    cursor: pointer;
+    text-align: center;
+    -webkit-appearance: none;
+}
+
+/* 로그인 체크 */
+.check_info {
+    position: relative;
+    margin-bottom: 12px;
+}
+
+.login_check_box {
+    position: relative;
+    display: block;
+    height: 26px;
+}
+
+.login_check_box input {
+    position: absolute;
+    top: 1px;
+    left: 1px;
+    width: 18px;
+    height: 18px;
+    cursor: pointer;
+}
+
+.login_check_box label {
+    position: absolute;
+    top: 0;
+    left: -1px;
+    height: 26px;
+    padding-left: 32px;
+    font-size: 15px;
+    line-height: 26px;
+    cursor: pointer;
+    color: #333;
+    border: 1px solid #f5f6f7\9;
+    /*background-color: #f5f6f7;*/
+}
+
+/*
+.login_check_box .ico_keep_check::before {
+    content: '';
+    position: absolute;
+    top: -1px;
+    left: 0;
+    width: 26px;
+    height: 26px;
+    background-image: url(https://ssl.pstatic.net/static/nid/login/pc_qr_once.png);
+    background-position: -30px 0;
+    background-repeat: no-repeat;
+    -webkit-background-size: 170px 150px;
+    background-size: 170px 150px;
+}
+*/
+
+/* 아이디, 비밀번호 찾기 / 회원가입 */
+.find_info {
+    font-size: 14px;
+    line-height: 14px;
+    padding-top: 18px;
+    text-align: center;
+    color: #8e8e8e;
+    border-top: 1px solid #e4e4e5;
+    margin-bottom:70px;
+}
+
+.find_info a {
+    font-size: 14px;
+    line-height: 14px;
+    display: inline-block;
+    text-decoration: none;
+    color: #8e8e8e;
+}
+
+.bar {
+    display: inline-block;
+    width: 1px;
+    height: 12px;
+    text-indent: -999em;
+    background: #e4e4e5;
+    vertical-align: bottom;
+}
+
+.find_info .bar {
+    margin: 0 3px;
+}
+
+
+/* 간편로그인 */
+.qr_once_inner .title {
+    margin-bottom: 6px;
+    font-size: 18px;
+    font-weight: 700;
+    letter-spacing: -.8px;
+    color: #000;
+    text-align: center;
+}
+
+
+.qr_once_area .item_btn {
+    position: relative;
+    width: 100%;
+    height: 56px;
+    line-height: 56px;
+    border: 1px solid #03c75a;
+    background-color: #fff;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+    margin-top:30px;
+    box-shadow: 0 2px 6px 0 rgba(61,80,81,.08);
+    background-color: #03c75a;
+    color:#fff;
+    font-size: 16px;
+    font-weight:700;
+    letter-spacing: -.5px;
+    cursor: pointer;
+    text-align: center;
+}
+
+
+/* 푸터 */
+#footer {
+    position: relative;
+    bottom: 0;
+    width: 100%;
+    padding: 15px 0;
+    text-align: center;
+}
+
+#footer * {
+    font-size: 13px;
+    font-style: normal;
+    line-height: normal;
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    color: #333;
+}
+
+#footer ul {
+    margin: 0 auto 9px;
+}
+
+#footer ul li {
+    font-size: 11px;
+    position: relative;
+    display: inline;
+    padding: 0 5px 0 7px;
+    white-space: nowrap;
+    background-position: 0 -245px;
+}
+
+#footer ul li:first-child {
+    background: 0 0;
+}
+
+#footer a {
+    text-decoration: none;
+    color: #333;
+}
+
+#footer a:visited {
+    text-decoration: none;
+    color: #666;
+}
+
+#footer address {
+    font: 9px/14px Verdana;
+}
+
+#footer address em {
+    font: 9px verdana;
+    padding-left: 4px;
+}
+
+#footer address span {
+    font: 9px/14px Verdana;
+    padding-left: 2px;
+}
+
+
+
+@media screen and (max-width: 768px){
+	#container, #header {
+	    width: auto;
+	    margin: 0 15px;
+	}
+}
+
+
+@media screen and (max-width: 768px){
+	#header {
+	    position: relative;
+	    padding: 71px 0 35px;
+	}
+}
+
+
+
+@media screen and(max-width: 768px){
+	#header .r_logo {
+	    width: 165px;
+	    height: 32px;
+	    background-image: url("./images/logo/modoo_logo08.svg");
+	    background-position: 50% 0;
+	    background-size: contain;
+	}
+}
+
+@media screen and (max-width: 768px){
+	#header .lang {
+	    position: absolute;
+	    top: 8px;
+	    right: 0;
+	}
+}
+
+
+@media screen and (max-width: 768px){
+	#header .lang .sel {
+	    font-size: 12px;
+	    font-weight: 400;
+	    min-width: 82px;
+	    height: 24px;
+	    padding: 3px 10px 3px 6px;
+	    color: #333;
+	    border: 1px solid #ccc;
+	    background-position: 63px 50%;
+	}
+}
+
+@media screen and (max-width: 768px){
+	#content {
+	    width: auto;
+	}
+}
+
+
+@media screen and (max-width: 768px){
+	.input_row {
+	    margin-bottom: 6px;
+	    padding: 8px 35px 9px 11px;
+	}
+}
+
+@media screen and (max-width: 768px){
+	.comment, .error {
+	    margin: 0 0 6px 0;
+	}
+}
+
+@media screen and (max-width: 768px){
+	.check_info {
+	    margin-bottom: 10px;
+	}
+}
+
+@media screen and (max-width: 768px){
+	.login_check_box label {
+	    padding-left: 31px;
+	}
+}
+
+@media screen and (max-width: 768px){
+	.pc_check {
+	    display: none;
+	}
+}
+
+
+@media screen and (max-width: 768px){
+	.find_info {
+	    padding-top: 19px;
+	}
+}
+
+@media screen and (max-width: 1024px){
+	.find_info {
+	    font-size: 14px;
+	}
+}
+
+@media screen and (max-width: 1024px){
+	.find_info a {
+	    font-size: 14px;
+	}
+}
+
+/*
+@media screen and (max-width: 1024px){
+	#footer ul li, .logo, .sp, .wrg {
+	    background: url("../images/logo.png") no-repeat;
+	    -webkit-background-size: 460px auto;
+	    background-size: 460px auto;
+	}
+}
+
+@media screen and (max-width: 767px){
+	#footer ul li, .logo, .sp, .wrg {
+	    background: url("../images/logo.png") no-repeat;
+	    -webkit-background-size: 460px auto;
+	    background-size: 460px auto;
+	}
+}
+*/
+
+@media screen and (max-width: 1024px){
+	#footer a, #footer a:visited {
+	    color: #7e7e7e;
+	}
+}
+
+@media screen and (max-width: 1024px){
+	#footer address, #footer ul {
+	    display: none;
+	}
+}
+
+
+.help-block{
+	font-size:14px;
+	color:#adadad;
+	margin-bottom:35px;
+}
+
+
