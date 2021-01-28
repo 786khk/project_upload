@@ -1,5 +1,5 @@
 #FROM어떤 이미지를 기반으로 할지 이미지이름 :태그
-FROM  ubuntu:latest 
+FROM  tomcat:latest 
 #MAINTAINER 786khk@naver.com
 #셸 스크립트 또는 명령어 실행
 RUN apt-get update -y
