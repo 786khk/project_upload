@@ -1,0 +1,86 @@
+DB설계
+
+
+
+ CREATE TABLE `member` (
+  `id` varchar(12) NOT NULL,
+  `password` varchar(20) NOT NULL,
+  `nickname` varchar(12) NOT NULL,
+  `email` varchar(20) DEFAULT NULL,
+  `gender` varchar(6) DEFAULT NULL,
+  `phone` varchar(13) DEFAULT NULL,
+  `introduce` varchar(100) DEFAULT NULL,
+  `picture` varchar(300) DEFAULT NULL,
+  `allview` int(11) DEFAULT NULL,
+  PRIMARY KEY (`id`,`nickname`)
+);
+
+ CREATE TABLE `material` (
+  `maseq` int(11) NOT NULL AUTO_INCREMENT,
+  `rcseq` int(11) DEFAULT NULL,
+  `name` varchar(40) DEFAULT NULL,
+  `amount` varchar(40) DEFAULT NULL,
+  `id` varchar(12) NOT NULL,
+  PRIMARY KEY (`maseq`),
+  KEY `rcseq` (`rcseq`),
+  KEY `id` (`id`),
+  CONSTRAINT `material_ibfk_1` FOREIGN KEY (`rcseq`) REFERENCES `recipe` (`rcseq`),
+  CONSTRAINT `material_ibfk_2` FOREIGN KEY (`id`) REFERENCES `member` (`id`)
+);
+
+
+CREATE TABLE `recipe` (
+  `rcseq` int(11) NOT NULL AUTO_INCREMENT,
+  `rcwriter` varchar(12) NOT NULL,
+  `subject` varchar(60) NOT NULL,
+  `introduce` varchar(1000) DEFAULT NULL,
+  `rfilename` varchar(300) DEFAULT NULL,
+  `url` varchar(200) DEFAULT NULL,
+  `tip` varchar(200) DEFAULT NULL,
+  `category1` varchar(10) NOT NULL,
+  `category2` varchar(10) NOT NULL,
+  `wdate` date NOT NULL,
+  `hit` int(11) NOT NULL DEFAULT 0,
+  `rev` int(11) NOT NULL DEFAULT 0,
+  `scrap` varchar(10) DEFAULT NULL,
+  PRIMARY KEY (`rcseq`),
+  KEY `rcwriter` (`rcwriter`),
+  CONSTRAINT `recipe_ibfk_1` FOREIGN KEY (`rcwriter`) REFERENCES `member` (`id`)
+);
+
+
+CREATE TABLE `step` (
+  `stseq` int(11) NOT NULL AUTO_INCREMENT,
+  `rcseq` int(11) DEFAULT NULL,
+  `storder` int(11) DEFAULT NULL,
+  `filename` varchar(100) DEFAULT NULL,
+  `content` varchar(200) DEFAULT NULL,
+  `id` varchar(12) NOT NULL,
+  PRIMARY KEY (`stseq`),
+  KEY `rcseq` (`rcseq`),
+  KEY `id` (`id`),
+  CONSTRAINT `step_ibfk_1` FOREIGN KEY (`rcseq`) REFERENCES `recipe` (`rcseq`),
+  CONSTRAINT `step_ibfk_2` FOREIGN KEY (`id`) REFERENCES `member` (`id`)
+);
+
+
+
+ CREATE TABLE `review` (
+  `rvseq` int(11) NOT NULL AUTO_INCREMENT,
+  `rcseq` int(11) DEFAULT NULL,
+  `rvwriter` varchar(12) DEFAULT NULL,
+  `rvwdate` date DEFAULT NULL,
+  `star` varchar(1) DEFAULT NULL,
+  `rvcontent` varchar(400) DEFAULT NULL,
+  `rvfilename` varchar(200) DEFAULT NULL,
+  PRIMARY KEY (`rvseq`),
+  KEY `rcseq` (`rcseq`),
+  KEY `review_ibfk_2` (`rvwriter`),
+  CONSTRAINT `review_ibfk_1` FOREIGN KEY (`rcseq`) REFERENCES `recipe` (`rcseq`),
+  CONSTRAINT `review_ibfk_2` FOREIGN KEY (`rvwriter`) REFERENCES `member` (`id`)
+);
+
+
+
+
+

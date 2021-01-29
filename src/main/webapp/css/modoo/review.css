@@ -1,0 +1,199 @@
+@charset "UTF-8";
+
+/*폰트*/
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+KR&display=swap');
+
+
+
+#contents_area_full {
+    /*border: 1px solid red;*/
+    padding: 0 0 20px 0;
+    margin:20px auto;
+    background: #fff;
+}
+
+/* 후기 */
+.s_list_ea {
+    border-bottom: 1px solid #e6e7e8;
+    font-size: 15px;
+    padding: 6px 4px 12px;
+    /*margin: 14px 30px 0;*/
+    
+}
+
+/* 타이틀 */
+.s_list_ea.tit {
+    font-size: 25px;
+    padding: 0.5em 0;
+    font-family: 'Noto Sans KR', sans-serif;
+    font-weight: normal;
+}
+
+.s_list_ea.tit span{
+	font-size: 16px;
+	color:#666;
+	font-weight: normal;
+}
+
+.rcp_m_list2 {
+    margin-top: 30px;
+    padding: 0 22px;
+}
+
+.common_sp_list_ul {
+    margin: 0;
+    vertical-align: top;
+}
+
+.common_sp_list_li {
+    list-style: none;
+    padding: 0;
+    /*margin: 0 12px 40px 0;*/
+    margin:15px;
+    display: inline-block;
+    vertical-align: top;
+    position: relative;
+}
+
+.common_sp_list_ul.ea4 li {
+    width: /*282px*/22%;
+}
+
+.common_sp_thumb {
+    position: relative;
+    border-radius: 4px;
+    overflow: hidden;
+}
+
+.common_sp_thumb img {
+    width: 100%;
+    vertical-align: middle;
+}
+
+.common_sp_caption {
+    padding: 15px 5px;
+}
+
+.common_sp_caption_rv_box {
+    display: table-cell;
+    width: 100%;
+}
+
+.common_sp_caption_tit {
+    margin: 0 0 6px 0;
+    color: #000;
+    text-align: left;
+    font-size: 15px;
+}
+
+.common_sp_caption_tit.line3 {
+    overflow: hidden;
+    text-overflow: ellipsis;
+    display: -webkit-box;
+    -webkit-line-clamp: 3;
+    -webkit-box-orient: vertical;
+    word-wrap: break-word;
+    white-space: normal;
+    line-height: 1.5;
+}
+
+.common_sp_caption_tit.rv {
+    font-weight: normal;
+	font-family: 'Noto Sans KR', sans-serif;
+    font-size: 1.1em;
+}
+
+.common_sp_caption_rv_name {
+    color: #999;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    overflow: hidden;
+    font-family: 'Noto Sans KR', sans-serif;
+    font-size: 14px;
+    vertical-align: 0;
+    padding: 0 1px 7px 0;
+    font-weight: 300;
+}
+
+.common_sp_caption_rv_name img {
+    width: 22px;
+    height: 22px;
+    border-radius: 50%;
+    margin: 0 4px -2px 0;
+    vertical-align: text-bottom;
+}
+
+.common_sp_caption_buyer {
+	/* 시간 column"r_wdate"  */
+    color: #999;
+    font-family: 'Noto Sans KR', sans-serif;
+    font-size: 14px;
+    margin-left: 2px;
+    font-weight: 300;
+}
+
+/* 별점 */
+.common_sp_caption_rv {
+    vertical-align: super;
+    line-height: 1;
+    margin: 0 0 9px 0;
+}
+
+.common_sp_caption_rv_star {
+    vertical-align: 1px;
+}
+
+.common_sp_caption_rv_star img {
+    width: 14px;
+    margin-right: 1px;
+    margin: 0;
+}
+
+
+
+/* 페이징 */
+.text-center {
+    text-align: center;
+    margin-top:50px;
+    border-top:1px solid #dedede;
+    padding-top:10px;
+    clear: both;
+}
+
+.pagination {
+    display: inline-block;
+    padding-left: 0;
+    margin: 30px 0;
+    border-radius: 0;
+}
+
+.pagination>li {
+    display: inline;
+}
+
+.active a{
+    z-index: 2;
+    /* color: #fff; */
+    cursor: default;
+    /* background-color: #84accb; */
+    border-color: #e6e7e8;
+    
+}
+
+.pagination li a{
+   padding:9px 15px;
+   border:1px solid #e6e7e8   
+}
+
+.pagination li a {
+    padding: 9px 15px;
+    border: 1px solid #e6e7e8;
+}
+
+.active a {
+    z-index: 2;
+    color: #fff;
+    cursor: default;
+    background-color: #ff9000;
+    border-color: #e6e7e8;
+}
