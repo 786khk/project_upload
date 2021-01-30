@@ -12,8 +12,7 @@
 //###docker login
 //###docker pull 786khk/project_upload
 //###docker run -p 8080:8080 -v --name tom8 /home/project_upload/
-
-</javascript>```
+```
 
 FROM ubuntu:latest
 MAINTAINER 786khk@naver.com
