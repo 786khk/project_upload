@@ -1,16 +1,5 @@
 FROM ubuntu:latest
 MAINTAINER 786khk@naver.com
-RUN yum -y install wget
-RUN yum -y install initscript
-RUN yum -y install iptables
-RUNy um -y install wget
-RUN yum -y install openssh-server openssh-clients openssh-askpass
-RUN apt-get -y update
+RUN cat /etc/issue
 
-FROM openjdk:8	
-COPY . /usr/src
-WORKDIR /usr/src
-RUN vi Test.java
 
-RUN javac Test.java
-CMD ["java", "Test"]
