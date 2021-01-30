@@ -6,7 +6,7 @@ RUN yum -y install iptables
 RUNy um -y install wget
 RUN yum -y install openssh-server openssh-clients openssh-askpass
 RUN apt-get -y update
-java1.8
+
 FROM openjdk:8	
 COPY . /usr/src
 WORKDIR /usr/src
