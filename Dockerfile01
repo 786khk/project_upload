@@ -13,4 +13,4 @@ WORKDIR /usr/src
 RUN vi Test.java
 
 RUN javac Test.java
-CMD ["java", "TestMain"]
+CMD ["java", "Test"]
